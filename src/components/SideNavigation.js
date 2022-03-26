@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import classes from './SideNavigation.module.css';
 
 import { useNavigate } from 'react-router-dom';
-import classes from './SideNavigation.module.css';
 import runBFS from '../algorithms/runBFS';
 import runDFS from '../algorithms/runDFS';
 import runBiBFS from '../algorithms/runBiBFS';

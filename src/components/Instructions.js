@@ -1,8 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import classes from './Instructions.module.css';
 
-const Instructions = ({ startFound, endFound, addWeight, obstacleState }) => {
+const Instructions = ({ startFound, endFound }) => {
     return (
         <main>
         <fieldset className="border ms-2 me-2 mb-3">

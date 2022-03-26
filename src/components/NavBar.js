@@ -1,22 +1,16 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import classes from './NavBar.module.css';
 
-import { useNavigate } from 'react-router-dom';
-import Button from 'react-bootstrap/Button';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
-import classes from './NavBar.module.css';
-// import './NavBar.module.css';
-import runBFS from '../algorithms/runBFS';
-import runDFS from '../algorithms/runDFS';
-import runBiBFS from '../algorithms/runBiBFS';
-import runDjikstras from '../algorithms/runDjikstras';
+import Button from 'react-bootstrap/Button';
 
-const NavBar = ({ start, end, actualWidth, actualHeight, setRow, setSpeed, setShowAllNodes }) => {
+const NavBar = ({ setRow, setSpeed, setShowAllNodes }) => {
 
     let countOneToHundred = [];
     let i;
-    for (i = 1; i < 101; i++){
+    for (i = 2; i < 101; i++){
         countOneToHundred.push(i);
     }
 
@@ -41,7 +35,7 @@ const NavBar = ({ start, end, actualWidth, actualHeight, setRow, setSpeed, setSh
     return (
         <Navbar bg="light" expand="lg">
         <Container>
-            <Navbar.Brand href="#home">PATH FINDER</Navbar.Brand>
+            <button className={`${ classes.button11 } bg-light`} onClick={ () => window.location.reload(false) }>PATH FINDER</button>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
@@ -71,9 +65,6 @@ const NavBar = ({ start, end, actualWidth, actualHeight, setRow, setSpeed, setSh
             </Navbar.Collapse>
         </Container>
         </Navbar>
-        // <main className="d-flex p-3">
-            
-        // </main>
     )
     }
 

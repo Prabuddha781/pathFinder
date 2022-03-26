@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import classes from './Information.module.css';
+
 import { useState } from 'react';
 
 const Information = ({ start, end, weights }) => {

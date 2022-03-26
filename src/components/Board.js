@@ -1,9 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import classes from './Board.module.css';
 
 import { useState, useEffect } from 'react';
 import NavBar from './NavBar';
-import Sidebar from './Information';
-import classes from './Board.module.css';
 import SideNavigation from './SideNavigation';
 import Instructions from './Instructions';
 import Information from './Information';
